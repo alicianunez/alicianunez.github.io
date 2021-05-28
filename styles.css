@@ -10170,15 +10170,20 @@ body {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    /*color: rgba(255, 255, 255, 0.5); HERE FOR NAVBAR INITIAL COLORS*/  
+    color: rgba(109, 109, 109, 0.5);
+
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    /*color: rgba(255, 255, 255, 0.5); HERE FOR NAVBAR INITIAL COLORS*/  
+    color: rgba(109, 109, 109, 0.5);
+
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(109, 109, 109, 0.75);
+    /*color: rgba(255, 255, 255, 0.75); HERE FOR NAVBAR INITIAL COLORS*/  
   }
   #mainNav .nav-link:active {
     color: #fff;
@@ -10217,18 +10222,46 @@ body {
   border: 0;
 }
 
+.square-grid {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAHlBMVEUAAABkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGSH0mEbAAAACnRSTlMAzDPDPPPYnGMw2CgMzQAAAChJREFUKM9jgAPOAgZMwGIwKkhXQSUY0BCCMxkEYUAsEM4cjI4fwYIAf2QMNbUsZjcAAAAASUVORK5CYII=');
+  background-size: 15px;
+}
+
+
 .masthead {
   position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(221, 205, 175, 1), rgba(157, 173, 127, 1)), url("../assets/img/bg-masthead1.png");
-  /*background: linear-gradient(to bottom, rgba(216, 224, 236, 1), rgba(240, 165, 172, 1)), url("../assets/img/bg-masthead1.png");*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  /*height: 350px;*/
+  height: 35rem;
+  top: 10rem;
+}
+
+
+.cent-cont{
+  width: 80%;
+  height: 350px;
+  margin: 10% auto;
+  margin-top: 1%;
+  background: #9dad7f;
+  position: relative;
+  overflow: auto;
+}
+
+.cent-cont h1{
+  margin: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+}
+
+
+
+.cent-cont h2{
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 43%;
+  transform: translateY(-50%);
 }
 
 .thuuzhead {
@@ -10244,15 +10277,21 @@ body {
   background-size: cover;
 }
 
+.maintxt {
+  background: url("../assets/Images/morebacking.png");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
 .masthead h1 {
   font-family: "AbrilFatface-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
+  color: white;
 }
 .masthead h2 {
   max-width: 20rem;
@@ -10294,7 +10333,7 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 8rem 0; /*space above projects*/
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10446,4 +10485,27 @@ body {
   padding-left: 10px;
   padding-bottom: 5px;
 
+}
+
+
+
+.typewriter{
+  max-width: 80%;
+  overflow: hidden;
+  border-right: .08em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {max-width: 0}
+  to {max-width: 80%}
+}
+
+@keyframes blink-caret {
+  from, to {border-color: transparent}
+  50% {border-color: white}
 }
