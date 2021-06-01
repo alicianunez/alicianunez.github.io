@@ -10242,6 +10242,9 @@ body {
   background: #9dad7f;
   position: relative;
   overflow: auto;
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 
 .cent-cont h1{
@@ -10250,6 +10253,7 @@ body {
   transform: translateY(-50%);
   text-align: center;
   position: relative;
+  width: max-content;
 }
 
 
@@ -10488,7 +10492,7 @@ body {
 
 
 .typewriter{
-  max-width: 85%;
+  width: 0;
   overflow: hidden;
   border-right: .08em solid white;
   white-space: nowrap;
@@ -10499,8 +10503,8 @@ body {
 }
 
 @keyframes typing {
-  from {max-width: 0}
-  to {max-width: 85%}
+  from {width: 0}
+  to {width: 100%}
 }
 
 @keyframes blink-caret {
