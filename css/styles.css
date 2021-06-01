@@ -10488,7 +10488,7 @@ body {
 
 
 .typewriter{
-  max-width: 80%;
+  max-width: 85%;
   overflow: hidden;
   border-right: .08em solid white;
   white-space: nowrap;
@@ -10500,7 +10500,7 @@ body {
 
 @keyframes typing {
   from {max-width: 0}
-  to {max-width: 80%}
+  to {max-width: 85%}
 }
 
 @keyframes blink-caret {
